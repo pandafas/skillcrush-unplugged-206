@@ -351,10 +351,10 @@ footer {
     }*/
     
     nav {
-        width: 60% !important;
-        float: right !important;
+        /*width: 60% !important;*/
+        float: right;
         clear: both;
-        display: inline;
+        display: block;
         list-style-type: none;
     }
 
@@ -432,48 +432,189 @@ footer {
     }
 
     .main-header {
-        width: 100%;
+        width: 100%%;
     }
 
     .main-header .header-wrapper {
         width: 100%;
         margin: 0%;
+        display: inline-block;
     }
 
     .logo {
         width: 40%; 
         margin: 0% 2%;
+        display: inline-block;
     }
 
-    .logo a {
+    /*.logo a {
         width: 40%;
-    }
+    }*/
 
-    nav ul {
+    nav  {
+        width: 55%;
         float: right;
         clear: both;
         display: inline-block;
-        padding: 0%;
-        margin: 0%;
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+
+    nav ul {
+        width: 50%;
+        display: inline;
+    }
+
+    nav ul li {
+        width: 25%;
+        padding-left: 15%;
+        /*float: right;*/
+        list-style-type: none;
+        display: inline;
+
     }
 
     article .feed-item {
         float: left;
     }
 
+    .top-story {
+        width: 65%;
+        float: left;
+    }
+
     .top-info  {
         float: left;
-        width: 60%;
-        margin: 0%;
+        width: 100%;
+        padding-left: 5%;
     }
 
     .top-img {
-        width: 60%;
+        width: 97%;
     }
 
-    aside .sidebar {
+    .sidebar {
         float: right;
         clear: none;
+        width: 30%;
+    }
+
+    .feed {
+        width: 100%;
+        float: none;
+        clear: both;
+        padding-left: 5%;
+    }
+
+    .feed-type h3 {
+        float: right;
+
+    }
+
+    .feed p {
+        display: block;
+    }
+
+    .feed-info {
+        width: 70%%;
+        text-align: left;
+        margin-bottom: 10%;
+        padding-left: 25%;
+    }
+
+    .feed-img a {
+        float: left;
+        clear:both;
+        margin-right: 2%;
+        width: 20%;
+        margin-top: 0%;
+        padding-left: 0%;
+        padding-bottom: 5%;
+    }
+
+    article h3 {
+        width: 10%;
+        padding-bottom: 2%;
+    }
+
+
+    /***** ABOUT ******/
+
+    .contact-info {
+        padding-left: 5%;
+        width: 50%;
+    }
+
+    .mission-statement {
+        width: 95%;
+        padding-left: 5%;
+    
+    }
+
+    .team {
+        width: 95%;
+        padding-left: 5%;
+
+    }
+
+    .team-name {
+        margin-bottom: 1%;
+    }
+
+    .team-title {
+        margin-top: 0%;
+    }
+
+    .team-description {
+        display: block;
+        float: left;
+        width: 60%;
+        margin-left: 1%;
+    }
+
+    .team-img img {
+        padding: 0%;
+        margin-right: 2%;
+        width: 30%;
+        margin-bottom: 5%;
+    }
+
+    /***** FAQs *****/
+
+    main {
+        width: 100%;
+    }
+
+    article {
+        margin-bottom: 5%;
+    }
+
+    .faqs-item  {
+        width: 100%;
+    }
+
+    .faqs-item h3 {
+        width: 97%;
+    }
+
+    .faqs-item p {
+        width: 95%;
+    }
+
+
+    footer {
+        width: 100%;
+        margin: auto;
+    }
+
+    .footer-logo {
+        width: 47.5%
+        margin: auto;
+        margin-top: 10%;
+    }
+
+    .footer-logo img {
+        width: 60%;
     }
 }
 
