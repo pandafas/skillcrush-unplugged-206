@@ -97,6 +97,66 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body, html {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: #222;
+}
+
+a {
+    font-weight: 700;
+    color: #23a4cc;
+    text-decoration: none;
+}
+
+
+p {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+img {
+
+}
+
+h1, h2, h3, h4 {
+    color: black;
+    font-family: 'Source Sans Pro' sans-serif;
+}
+
+
+h1 {
+    font-size: 1.4em;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+figure {
+
+
+}
+
+
+.btn {
+    background-color: #b21e49;
+    color: white;
+    line-height: 2.5;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 2px 2px 0px #DADADA;
+    height: 2.5em;
+    width: 100%;
+    display: block;
+
+}
+
+input.btn {
+    
+
+}
 /***** HEADER *****/
 
 .main-header {
