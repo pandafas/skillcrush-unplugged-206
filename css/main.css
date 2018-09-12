@@ -197,6 +197,10 @@ nav ul li a {
   color: #333;
 }
 
+nav i {
+    padding-right: 10px;
+}
+
  
 
 /***** MAIN CONTENT *****/
@@ -280,6 +284,10 @@ input.btn {
     padding-right: 3%;
 }
 
+.feed-img img {
+    width: 100%;
+}
+
 .feed-type {
     text-transform: uppercase;
     font-size: 0.8em;
@@ -301,8 +309,7 @@ input.btn {
 /***** ABOUT *****/
 
 .contact-info {
-    width: 100%;
-    padding: 0 3%;
+    margin-left: 2%;
 }
 
 .contact-info ul {
@@ -311,6 +318,20 @@ input.btn {
     padding: inherit;
 }
 
+.map-container {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
  
 .mission-statement {
     width: 100%;
@@ -323,11 +344,27 @@ input.btn {
     float: left;
 }
 
-.team-img img {
-    width: 30%;
+.team-img {
+    width: 40%;
+    padding-bottom: 40%;
     float: left;
-    clear: both;
-    padding: 0 2%;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+}
+
+#team-img-jack {
+    background: url('../img/mobile-images/team-member-jack.jpg') center no-repeat;
+    background-size: cover;
+}
+
+#team-img-lana {
+    background: url('../img/mobile-images/team-member-lana.jpg') center no-repeat;
+    background-size: cover;
+}
+
+#team-img-willow {
+    background: url('../img/mobile-images/team-member-willow.jpg') center no-repeat;
+    background-size: cover;
 }
 
 .team-title {
@@ -342,9 +379,11 @@ input.btn {
 /***** FAQ *****/
 
 article {
-    width: 100%;
+    width: 95%;
     text-align: center;
     margin: auto;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5%;
 }
 
 article h3 {
@@ -582,24 +621,55 @@ footer {
         overflow: none;
     }
 
+    .sidebar-faqs i {
+        padding-right: 10px;
+    }
+
+    .sidebar-about-us i {
+        padding-right: 10px;
+    }
+
     .footer-logo {
         width: 30%;
     }
 
     /***** ABOUT *****/
 
-    .mission-statement p {
-        width: 96%;
+    .mission-statement {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 15px 0;
+        clear: both;
+    }
+
+    .contact-info {
+        float: left;
+        margin-right: 6%;
     }
 
     .contact-info ul {
         padding-left: 0%;
     }
-    
-    .team-img {
-        padding-left: 0%;
+
+    .map-container {
+        position: relative;
+        padding-bottom: 40%;
+        height: 0;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        width: 58%;
+        float: left;
+        margin-bottom: 40px;
+        margin-top: 30px;
     }
 
+    .map-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 
     /***** FAQS *****/
 
@@ -617,7 +687,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 940px) {
+@media only screen and (min-width:940px) {
     /*Desktop styles here*/
 
     h1 {
@@ -709,7 +779,26 @@ footer {
 
     .contact-info {
         padding-left: 5%;
-        width: 50%;
+    }
+
+    .map-container {
+        position: relative;
+        padding-bottom: 40%;
+        height: 0;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        width: 60%;
+        float: left;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+
+    .map-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
     .mission-statement {
@@ -721,6 +810,7 @@ footer {
     .team {
         width: 95%;
         padding-left: 5%;
+        padding-bottom: 5%;
 
     }
 
@@ -734,9 +824,10 @@ footer {
 
     .team-description {
         display: block;
-        float: left;
-        width: 60%;
+        width: 95%;
         margin-left: 1%;
+        padding-top: 3%;
+
     }
 
     .team-img img {
