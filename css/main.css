@@ -102,6 +102,7 @@ body, html {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     color: #222;
+    width: 97%;
 }
 
 a {
@@ -375,10 +376,19 @@ input.btn {
     display: none;
 }
 
+.team-last {
+    width: 100%;
+    padding-bottom: 65%;
+    float: left;
+    padding-left: 10.578px;
+}
+
+
+
 
 /***** FAQ *****/
 
-article {
+.faqs-item {
     width: 95%;
     text-align: center;
     margin: auto;
@@ -389,6 +399,14 @@ article {
 article h3 {
     width: 95%;
     overflow: visible;
+}
+
+.faqs-item-last {
+    width: 95%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 65%;
+
 }
 
 
@@ -509,10 +527,13 @@ footer {
 @media only screen and (min-width: 768px) {
     /*Tablet styles here*/
 
+    body {
+        width: 100%;
+    }
+
     .main-header {
         width: 100%;
         margin: auto;
-        padding: none;
     }
 
     .main-header .header-wrapper {
@@ -638,7 +659,7 @@ footer {
     .mission-statement {
         border-top: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
-        padding: 15px 0;
+        padding: 15px 0 0 15px;
         clear: both;
     }
 
@@ -669,6 +690,10 @@ footer {
         left: 0;
         width: 100%;
         height: 100%;
+    }
+
+    .team-last {
+        padding-left: 21.672px;
     }
 
     /***** FAQS *****/
@@ -711,11 +736,6 @@ footer {
 
     .top-img {
         width: 100%;
-        /*padding-bottom: 1em;*/
-    }
-
-    .top-img img {
-        max-width: 620px;
     }
 
     .top-info {
@@ -835,6 +855,10 @@ footer {
         margin-right: 2%;
         width: 30%;
         margin-bottom: 5%;
+    }
+
+    .team-last {
+        padding-left: 5%;
     }
 
     /***** FAQs *****/
